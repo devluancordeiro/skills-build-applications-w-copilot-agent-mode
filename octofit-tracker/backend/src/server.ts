@@ -13,8 +13,7 @@ const API_HOST = CODESPACE_NAME
   ? `${CODESPACE_NAME}-8000.githubpreview.dev`
   : `localhost:${PORT}`;
 const API_URL = CODESPACE_NAME ? `https://${API_HOST}` : `http://${API_HOST}`;
-
-const MONGO_URI = process.env.MONGO_URI ?? 'mongodb://127.0.0.1:27017/octofit';
+const MONGO_URI = process.env.MONGO_URI ?? 'mongodb://127.0.0.1:27017/octofit_db';
 
 app.use(express.json());
 
